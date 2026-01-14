@@ -15,10 +15,19 @@ function sub(){
 }
 
 function mult(){
-    
+   var primeiro = parseFloat(document.getElementById("n5").value)
+   var segundo = parseFloat(document.getElementById("n6").value)
+   document.getElementById("respMult").innerHTML = primeiro * segundo
 }
 
 function div(){
-    // condicional, que se o primeiro numero digitado for === 0, 
-    // textContent = "Nao existe divisao por 0"
+    var num1 = parseFloat(document.getElementById("n7").value)
+    var num2 = parseFloat(document.getElementById("n8").value)
+    
+    if(num2 !== 0){
+        document.getElementById("respDiv").innerHTML = (num1 / num2).toFixed(2)
+    }else{
+        document.getElementById("respDiv").innerHTML = "Não há divisão por 0, digite outro número!!!"
+        // alert("Não há divisão por 0, digite outro número!!!")
+    }
 }
