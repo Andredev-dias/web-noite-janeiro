@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <nav>
+          <a href="../Calculadora/">Calculadora Normal</a>
+          <a href="../CalcSelect/">Calculadora com select</a>
+          <a href="../doChat/">Calculadora do chatGPT</a>
+          <a href="../Inicial/">Exercício Inicial</a>
+        </nav>
+    </header>
+
+    <h1>Calculadora com Select</h1>
+        <div>
+            <input id="n1" type="text" placeholder="Insira o primeiro número">
+            <input id="n2" type="text" placeholder="Insira o segundo número">
+            <select id="operador">
+                <option value="+">Adição (+)</option>
+                <option value="-">Subtração (-)</option>
+                <option value="*">Multiplicação (*)</option>
+                <option value="/">Divisão (/)</option>                
+            </select>
+            <button onclick="calcular()">CALCULAR</button>
+        </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
